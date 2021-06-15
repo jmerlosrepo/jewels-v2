@@ -1,0 +1,28 @@
+{
+    "jewels":[
+        {
+            "id":"1",
+            "description":"Pulsera cuadrada",
+            "material":"plata",
+            "price":"150.00",
+            "image":"pulsera_cuadrada.jpg",
+            "selected":false
+        },
+        {
+            "id":"2",
+            "description":"Pulsera mariposa",
+            "material":"plata",
+            "price":"100.00",
+            "image":"pulsera_mariposa.jpg",
+            "selected":false
+        },
+        {
+            "id":"3",
+            "description":"Cadena barbada 50cm",
+            "material":"oro",
+            "price":"12000.00",
+            "image":"cadena_barbada_oro.jpg",
+            "selected":false
+        }
+    ]
+}

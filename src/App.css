@@ -1,38 +1,418 @@
-.App {
-  text-align: center;
+html, body{
+  background-color: rgb(199, 195, 195);
+  font-family: 'Trebuchet MS',Tahoma,Verdana,Arial,sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a, button, input, textarea{
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+textarea{
+  resize: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 26px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+h6{
+  font-size: 20px;
+}
+
+.roundedCorner{
+  border-radius: 4px;
+}
+
+.toolsBackgorund{
+  background-color: #eceadf;
+  border: 1px solid #d9d6c4;
+  color: #1f1f1f;
+}
+
+.buttonTheme{
+  background-color: #f8f7f6;
+  border: 1px solid #cbc7bd;
+  color: #654b24;
+}
+
+.cancelButton{
+  background-color: #f8f7f6;
+  border: 1px solid #cbc7bd;
+  color: #654b24;
+}
+
+.cancelButton:hover{
+  background-color: #aa8957;
+  border: 1px sold #654b24;
+  color: #fff;
+}
+
+
+.buttonTheme:hover{
+  background-color: #654b24;
+  border: 1px sold #654b24;
+  color: #fff;
+}
+
+.buttonTheme:hover .buttonIcons{
+  color: #fff;
+}
+
+.buttonIcons{
+  color: #b83400;
+  margin-left: 5px;
+}
+
+.highlights{
+  background-color: #f7f3de;
+  border: 1px solid #b2a266;
+  color: #3a3427;
+}
+
+.alert{
+  background-color: #b83400;
+  border: 1px solid #681818;
+  color: #fff
+}
+
+.alertIcons{
+  color: #fbdb93;
+}
+
+.hidden{
+  display: none;
+}
+
+.container{
+  background-color: #f8f7f6;
+  padding: 0px;
+  min-height: 700px;
+  position: relative;
+}
+
+.heroContainer{
+  position: relative;
+}
+
+.hero{
+  height: 95vh;
+	padding: 1em;
+	box-sizing: border-box;
+  background: url('http://localhost:3000/assets/hero-section/heroJewels1.jpg') center center no-repeat;
+  background-size: cover;
+  filter:grayscale(90%) brightness(0.5);
+}
+
+.heroContent{
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  top: 15%;
+  left: 15%;
+  z-index: 2;
+  color: #fff;
+  width: 70%;
+}
+
+.cardTemplate{
+  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.2);
+}
+
+.cardHeader{
+  border-radius: 4px 4px 0px 0px;
+  padding: 0px 4px;
+}
+
+.cardsContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  cursor: pointer;
+  transition: all 200ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover{
+  transform: scale(1.02, 1.02);
+}
+
+.card-image{
+  max-height: 250px;
+}
+
+.card-spacing{
+  margin: 5px;
+}
+
+.navigation{
+  background-color: #eceadf;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navBarLogo{
+  margin: 0px 5px;
+  width: 15%;
+  color: #654b24;
+}
+
+.navBarLogo:hover{
+  color: #fff;
+}
+
+.navBarButtons{
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: row;
+  width: 72%;
+}
+
+.nvButton{
+  color: #654b24;
+  padding: 15px 20px;
+  transition: background-color 200ms linear;
+}
+
+.nvButton:hover{
+  background-color: #654b24;
+  color: #fff;
+}
+
+.navBarRightButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 300px;
+}
+
+.navBarRightButtons a{
+  color: #654b24;
+  padding: 15px 20px;
+  transition: background-color 200ms linear;
+}
+
+.navBarRightButtons a:hover{
+  background-color: #654b24;
+  color: #fff;
+}
+
+.cartButton{
+  width: 150px;
+}
+
+.selectedItemsList{
+  margin: 10px;
+  min-height: 400px;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  background-color: #f8f7f6;
+  color: #654b24;
+  border: 1px solid #681818;
+}
+
+.itemContainer{
+  width: 80%;
+  padding: 5px;
+  
+}
+
+.removeItemButton{
+  width: 15%;
+  font-size: 30px;
+  margin: 0px;
+  max-height: 70px;
+}
+
+.descriptionPrice{
+  font-size: 18px;
+}
+
+.descriptionPrice span:nth-child(2){
+  float: right;
+}
+
+.contactContainer{
+  background-color: #f8f7f6;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contactBorder{
+  border: 1px solid #cbc7bd;
+  color: #654b24;
+}
+
+.contactBody{
+  margin: 0px 10px;
+}
+
+.listaContacto{
+  margin: 15px;
+}
+
+.redes li i, .telefonos li i{
+  font-size: 26px;
+  margin: 5px 0px;
+}
+
+.facebook-blue{
+  color: #4267B2;
+}
+
+.instagram-red{
+  color: #F56040;
+}
+
+.twitter-blue{
+  color: #1DA1F2;
+}
+
+.whatsApp-green{
+  color: #25d366;
+}
+
+.phoneNumbers{
+  margin: 0px 5px;
+}
+
+.socialNetwork{
+  margin: 0px 5px;
+  text-decoration: none;
+  color: #4267B2;
+  cursor: pointer;
+}
+
+.cartContainer{
+  padding: 15px;
+}
+
+.cart{
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1px solid #cbc7bd;
+  color: #654b24;
+}
+
+.submitRequest{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.loginContainer{
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.login{
+  min-height: 30vh;
+  min-width: 30vw;
+  text-align: center;
+  color: #654b24;
+  border: 1px solid #cbc7bd;
+}
+
+.login-inputs{
+  margin: 20px 15px;
+  text-align: left;
+}
+
+.loginButton{
+  margin: 0 auto;
+}
+
+.userInfoHeader{
+  padding: 0px 10px;
+}
+
+.userInfoFormContainer{
+  padding: 15px;
+}
+
+.modalBackground{
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.addEditItemModal{
+  z-index: 3;
+  color: #654b24;
+  border: 1px solid #cbc7bd;
+  background-color: #f8f7f6;
+  min-width: 400px;
+  max-height: 600px;
+}
+
+.modalForm{
+  padding: 15px;
+}
+
+.formButtons{
+  margin: 10px 0px;
+  text-align: right;
+}
+
+.formButtons button{
+  margin-left: 5px;
+}
+
+.groupSpacing{
+  margin: 10px 0px;
 }
