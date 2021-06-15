@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jewels-v2/static/css/main.10bda98d.chunk.css",
+    "main.js": "/jewels-v2/static/js/main.06cbae49.chunk.js",
+    "main.js.map": "/jewels-v2/static/js/main.06cbae49.chunk.js.map",
+    "runtime-main.js": "/jewels-v2/static/js/runtime-main.fc678a93.js",
+    "runtime-main.js.map": "/jewels-v2/static/js/runtime-main.fc678a93.js.map",
+    "static/css/2.cab663c1.chunk.css": "/jewels-v2/static/css/2.cab663c1.chunk.css",
+    "static/js/2.991ec93a.chunk.js": "/jewels-v2/static/js/2.991ec93a.chunk.js",
+    "static/js/2.991ec93a.chunk.js.map": "/jewels-v2/static/js/2.991ec93a.chunk.js.map",
+    "static/js/3.466d96ad.chunk.js": "/jewels-v2/static/js/3.466d96ad.chunk.js",
+    "static/js/3.466d96ad.chunk.js.map": "/jewels-v2/static/js/3.466d96ad.chunk.js.map",
+    "index.html": "/jewels-v2/index.html",
+    "static/css/2.cab663c1.chunk.css.map": "/jewels-v2/static/css/2.cab663c1.chunk.css.map",
+    "static/css/main.10bda98d.chunk.css.map": "/jewels-v2/static/css/main.10bda98d.chunk.css.map",
+    "static/js/2.991ec93a.chunk.js.LICENSE.txt": "/jewels-v2/static/js/2.991ec93a.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/jewels-v2/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc678a93.js",
+    "static/css/2.cab663c1.chunk.css",
+    "static/js/2.991ec93a.chunk.js",
+    "static/css/main.10bda98d.chunk.css",
+    "static/js/main.06cbae49.chunk.js"
+  ]
+}
